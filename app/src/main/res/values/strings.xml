@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tip Time</string>
+    <string name="biaya_layanan">Cost of Service</string>
+    <string name="kualitas_layanan">How was the service?</string>
+    <string name="kualitas_satu">Amazing (20%)</string>
+    <string name="kualitas_dua">Good (18%)</string>
+    <string name="kualitas_tiga">Okay (15%)</string>
+    <string name="tip_bulatkan">Round up tip?</string>
+    <string name="hitung_layanan">Calculate</string>
+    <string name="tip_layanan">Tip Amount</string>
+</resources>
