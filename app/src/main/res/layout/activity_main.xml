@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--Header Bar-->
     <ImageView
         android:id="@+id/header_bar"
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bg_tiptime_apps" />
 
+    <!--Judul Aplikasi-->
     <TextView
         android:id="@+id/header_title"
         android:layout_width="wrap_content"
@@ -35,6 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/header_bar"
         tools:layout_editor_absoluteX="16dp">
 
+        <!--Biaya Layanan-->
         <EditText
             android:id="@+id/biaya_layanan"
             android:layout_width="160dp"
@@ -44,6 +47,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
+        <!--Kualitas Layanan-->
         <TextView
             android:id="@+id/kualitas_layanan"
             android:layout_width="wrap_content"
@@ -52,6 +56,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/biaya_layanan" />
 
+        <!--Tingkat Kualitas-->
         <RadioGroup
             android:id="@+id/kualitas_opsi"
             android:layout_width="wrap_content"
@@ -60,6 +65,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/kualitas_layanan">
 
+            <!--Kualitas Satu-->
             <RadioButton
                 android:id="@+id/kualitas_satu"
                 android:layout_width="wrap_content"
@@ -67,19 +73,23 @@
                 android:checked="true"
                 android:text="@string/kualitas_satu" />
 
+            <!--Kualitas Dua-->
             <RadioButton
                 android:id="@+id/kualitas_dua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/kualitas_dua" />
 
+            <!--Kualitas Tiga-->
             <RadioButton
                 android:id="@+id/kualitas_tiga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/kualitas_tiga" />
+
         </RadioGroup>
 
+        <!--Bulatkan Tip ?-->
         <Switch
             android:id="@+id/tip_bulatkan"
             android:layout_width="0dp"
@@ -90,6 +100,7 @@
             app:layout_constraintStart_toStartOf="@id/kualitas_opsi"
             app:layout_constraintTop_toBottomOf="@id/kualitas_opsi" />
 
+        <!--Menghitung Tip-->
         <Button
             android:id="@+id/hitung_layanan"
             android:layout_width="0dp"
@@ -99,8 +110,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tip_bulatkan" />
 
+        <!--Hasil Tip-->
         <TextView
-            android:id="@+id/tip_result"
+            android:id="@+id/tip_hasil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tip_layanan"
@@ -108,4 +120,5 @@
             app:layout_constraintTop_toBottomOf="@id/hitung_layanan" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
